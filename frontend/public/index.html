@@ -3,83 +3,113 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
-        <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-        <title>Emergent | Fullstack App</title>
+        <meta name="theme-color" content="#7b2cbf" />
+        
+        <!-- SEO Meta Tags -->
+        <title>Transaction Management System | Secure Digital Record Keeping for Brokers</title>
+        <meta name="description" content="Professional transaction management system for brokers and financial services. Secure digital record keeping, real-time monitoring, compliance tracking, and automated reporting. Get started today." />
+        <meta name="keywords" content="transaction management system, broker transaction software, digital record keeping tool, secure transaction platform, SaaS transaction system, financial compliance software" />
+        <meta name="author" content="Transaction Management System" />
+        <meta name="robots" content="index, follow" />
+        
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Transaction Management System | Secure Digital Record Keeping for Brokers" />
+        <meta property="og:description" content="Professional transaction management system for brokers and financial services. Secure digital record keeping, real-time monitoring, and compliance tracking." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://secure-portal-6.preview.emergentagent.com" />
+        <meta property="og:image" content="https://secure-portal-6.preview.emergentagent.com/og-image.jpg" />
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Transaction Management System | Secure Digital Record Keeping" />
+        <meta name="twitter:description" content="Professional transaction management system for brokers and financial services." />
+        <meta name="twitter:image" content="https://secure-portal-6.preview.emergentagent.com/twitter-image.jpg" />
+        
+        <!-- Structured Data for Organization -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Transaction Management System",
+          "description": "Professional transaction management system for brokers and financial services",
+          "url": "https://secure-portal-6.preview.emergentagent.com",
+          "logo": "https://secure-portal-6.preview.emergentagent.com/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-TRANSACT",
+            "contactType": "sales"
+          },
+          "sameAs": [
+            "https://linkedin.com/company/transaction-management-system",
+            "https://twitter.com/transactionmgmt"
+          ]
+        }
+        </script>
+        
+        <!-- Structured Data for FAQ -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is a Transaction Management System?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Transaction Management System is a secure digital platform that helps brokers and financial professionals track, manage, and monitor all their transactions in real-time. It replaces manual record-keeping with automated, compliant, and secure digital processes."
+              }
+            },
+            {
+              "@type": "Question", 
+              "name": "How does it improve compliance tracking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our system automatically generates audit trails, maintains compliance documentation, and provides real-time reporting to meet regulatory requirements. All transactions are logged with timestamps, user information, and complete documentation trails."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my transaction data secure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we use enterprise-grade encryption, secure cloud infrastructure, and follow industry best practices for data protection. Your transaction data is encrypted both in transit and at rest, with regular security audits and compliance certifications."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can multiple team members access the system?",
+              "acceptedAnswer": {
+                "@type": "Answer", 
+                "text": "Absolutely. Our system supports multi-user access with role-based permissions, allowing different team members to have appropriate access levels while maintaining security and audit trails for all actions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly can I get started?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can get started immediately with our free demo. Full setup typically takes less than 24 hours, including data migration assistance and team training to ensure a smooth transition from your current system."
+              }
+            }
+          ]
+        }
+        </script>
+        
+        <!-- Preconnect for performance -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-        <a
-            id="emergent-badge"
-            target="_blank"
-            href="https://app.emergent.sh/?utm_source=emergent-badge"
-            style="
-                display: flex !important;
-                align-items: center !important;
-                position: fixed !important;
-                bottom: 20px;
-                right: 20px;
-                text-decoration: none;
-                padding: 6px 10px;
-                font-family: -apple-system, BlinkMacSystemFont,
-                    &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell,
-                    &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;,
-                    sans-serif !important;
-                font-size: 12px !important;
-                z-index: 9999 !important;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
-                border-radius: 8px !important;
-                background-color: #ffffff !important;
-                border: 1px solid rgba(255, 255, 255, 0.25) !important;
-            "
-        >
-            <div
-                style="display: flex; flex-direction: row; align-items: center"
-            >
-                <img
-                    style="width: 20px; height: 20px; margin-right: 8px"
-                    src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4"
-                />
-                <p
-                    style="
-                        color: #000000;
-                        font-family: -apple-system, BlinkMacSystemFont,
-                            &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu,
-                            Cantarell, &quot;Open Sans&quot;,
-                            &quot;Helvetica Neue&quot;, sans-serif !important;
-                        font-size: 12px !important;
-                        align-items: center;
-                        margin-bottom: 0;
-                    "
-                >
-                    Made with Emergent
-                </p>
-            </div>
-        </a>
+        
+        <!-- PostHog Analytics -->
         <script>
             !(function (t, e) {
                 var o, n, p, r;
@@ -144,7 +174,7 @@
             })(document, window.posthog || []);
             posthog.init("phc_yJW1VjHGGwmCbbrtczfqqNxgBDbhlhOWcdzcIJEOTFE", {
                 api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well
+                person_profiles: "identified_only",
             });
         </script>
     </body>
